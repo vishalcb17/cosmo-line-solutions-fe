@@ -1,0 +1,123 @@
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.contact-info h2,
+.contact-form-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.contact-details {
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  background: var(--bg-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-text h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.contact-text p,
+.contact-text a {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.contact-text a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact-text a:hover {
+  text-decoration: underline;
+}
+
+.map-placeholder {
+  background: var(--bg-light);
+  border: 2px dashed var(--border-color);
+  border-radius: 0.75rem;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-content {
+  text-align: center;
+  color: var(--text-light);
+}
+
+.map-content p {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.map-content small {
+  font-size: 0.875rem;
+}
+
+.alert-success {
+  background-color: #d1fae5;
+  color: var(--success-color);
+  border: 1px solid var(--success-color);
+}
+
+@media (max-width: 1024px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info h2,
+  .contact-form-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .map-placeholder {
+    height: 200px;
+  }
+}
