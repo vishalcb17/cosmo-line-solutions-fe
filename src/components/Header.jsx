@@ -18,7 +18,7 @@ function Header() {
     <header className="header">
       <nav className="nav container">
         <Link to="/" className="logo">
-          <span className="logo-text">CosmoLine</span>
+          <img src="/logo.png" alt="CosmoLine Solutions" className="logo-image" />
         </Link>
 
         <button
